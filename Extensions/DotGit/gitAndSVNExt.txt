@@ -1,0 +1,17 @@
+.git
+.git-rewrite
+.git/HEAD
+.git/config
+.git/index
+.git/logs/
+.git_release
+.gitattributes
+.gitconfig
+.gitignore
+.gitk
+.gitkeep
+.gitmodules
+.gitreview
+.svn
+.svn/entries
+.svnignore
