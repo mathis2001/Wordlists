@@ -27,7 +27,6 @@
 .templ
 .back
 .bak2
-.backup
 .swo
 .%filename%.swo
 .swp
