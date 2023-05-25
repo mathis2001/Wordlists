@@ -18,3 +18,11 @@
 .phpJunk123png
 .png.jpg.php
 .php%00.png%00.jpg
+.pht
+.phps
+.phar
+.phpt
+.pgif
+.phtml
+.phtm
+.inc
