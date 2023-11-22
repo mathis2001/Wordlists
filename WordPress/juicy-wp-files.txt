@@ -21,3 +21,4 @@ wp-admin.php
 wp-config.php
 wp-includes
 wp-config.bak.php
+debug.log
