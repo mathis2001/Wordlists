@@ -1,4 +1,4 @@
-/MafData/
+MafData
 defaults.env
 queryconfig.action
 sqlnet.log
@@ -80,3 +80,19 @@ cron.log
 cvsweb.conf
 mail.log
 httpd.conf
+server.cfg
+smtp.xml
+main.cfg
+machttp.log
+configview.asp
+auto_inst.cfg
+printenv
+logs
+config
+configs
+.vscode
+Production.json
+WebServers.xml
+app.log
+monitoring
+health
