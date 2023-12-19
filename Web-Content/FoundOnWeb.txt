@@ -96,3 +96,12 @@ WebServers.xml
 app.log
 monitoring
 health
+.gitlab-ci.yml
+Jenkinsfile
+_includes/framer.php
+debug/pprof
+common/config.php.new
+localhost.sql
+database.create.json
+argo.properties
+backend/bffwa?path=
