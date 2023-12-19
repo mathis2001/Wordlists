@@ -1,2 +1,4 @@
 /MafData/
 defaults.env
+queryconfig.action
+sqlnet.log
