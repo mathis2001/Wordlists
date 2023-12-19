@@ -2,3 +2,14 @@
 defaults.env
 queryconfig.action
 sqlnet.log
+debug.log
+composer.json
+package.json
+package-lock.json
+composer.lock
+composer.phar
+/api/getEnvVars
+web.config
+config.json
+access_control
+password_control
