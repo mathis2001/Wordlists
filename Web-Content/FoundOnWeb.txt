@@ -105,3 +105,8 @@ localhost.sql
 database.create.json
 argo.properties
 backend/bffwa?path=
+info.php
+test.php
+test1.php
+test2.php
+phpinfo.php
