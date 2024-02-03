@@ -1,3 +1,4 @@
+local_settings.py
 MafData
 defaults.env
 queryconfig.action
