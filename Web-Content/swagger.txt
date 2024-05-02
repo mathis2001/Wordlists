@@ -48,3 +48,12 @@
 /api/v1/
 /api/v2
 /api/v3
+/api/v1/openapi.json
+/api/v2/openapi.json
+/api/v3/openapi.json
+/openapi.json
+/v1/
+/v2/
+/v3/
+/docs
+/redoc
