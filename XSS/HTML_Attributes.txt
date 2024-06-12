@@ -124,6 +124,7 @@ onpause
 onplay
 onplaying
 onpopstate
+onpointercancel
 onprogress
 onpropertychange
 onratechange
@@ -181,6 +182,7 @@ onwebkitmouseforceup
 onwebkitmouseforcewillbegin
 onwebkittransitionend
 onwebkitwillrevealbottom
+onwebkitplaybacktargetavailabilitychanged
 onwheel
 onzoom
 href
