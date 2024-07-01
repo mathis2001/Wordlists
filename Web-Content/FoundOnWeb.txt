@@ -10141,6 +10141,8 @@ Set-Cookie=test=test
 /firebase/firebase-tools/issues/1627
 /firebase/superstatic
 /firebase/superstatic/pull/254
+/__/firebase/init.json
+/__/firebase/init.js
 /fk
 /flash/
 /flash/kb/pass-variables-swfs-flashvars.html
