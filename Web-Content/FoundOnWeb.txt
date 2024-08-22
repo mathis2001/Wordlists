@@ -1683,6 +1683,7 @@ build_config_private.ini
 build.local.xml
 .buildlog
 .buildpacks
+buildPasswordreset.xml
 build.sh
 build.xml
 bullet
@@ -36296,6 +36297,7 @@ random.py
 random_audit.php
 randompath
 ranking-factors
+ramp_core.js
 rapid7
 rashidziaur
 rate
@@ -39387,6 +39389,7 @@ zuora
 zuriel
 zurieltest
 zzz.html
+__better_errors
 {ACCOUNT_ID}
 {ACCOUNT_ID}browser
 {APP_ID}
