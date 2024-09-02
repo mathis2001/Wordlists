@@ -8518,6 +8518,7 @@ Set-Cookie=test=test
 /app/app.nocache.js
 /app/chat/chat_launch
 /app/contact/ask/
+/app/config/config.local.neon
 /app/plugins/saml-20-single-sign-on/
 /app/plugins/saml-20-single-sign-on/saml/config/config.php
 /app/plugins/saml-20-single-sign-on/saml/www/
