@@ -14,6 +14,7 @@ contextmenu
 copyformatting
 div
 docprops
+devtools
 elementspath
 enterkey
 filebrowser
@@ -131,6 +132,11 @@ searchreplace
 wordcount
 fileuploader
 progressbar
+preview
 imageuploader
 svgicons
 icons
+flash
+language
+save
+xml
