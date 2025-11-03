@@ -104,3 +104,5 @@ lang/zh.js
 /ckeditor/samples/sample.html
 /ckeditor/samples/toolbarconfigurator/index.html
 /ckeditor/skins/moono-lisa/
+/ckeditor/packages.json
+packages.json
