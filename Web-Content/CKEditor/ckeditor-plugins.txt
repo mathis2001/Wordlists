@@ -17,6 +17,7 @@ docprops
 devtools
 elementspath
 enterkey
+fakeobjects
 filebrowser
 find
 floatingspace
